@@ -7,4 +7,9 @@
 #### &emsp;Angular AsyncPipe，不需要调用 unsubscribe()取消订阅。  
 #### &emsp;通过 Subject，BehaviorSubject，AsyncSubject，ReplaySubject 在各个 Component 之间通信，需要调用 unsubscribe()取消订阅。  
 #### &emsp;RxJS 自带的一些操作符：take，takeWhile，first 等等，不需要调用 unsubscribe()取消订阅。   
-#### &emsp;通过 HttpClient 执行 Http Request 返回的 Observable 是 Cold Observable。
+#### &emsp;通过 HttpClient 执行 Http Request 返回的 Observable 是 Cold Observable。  
+
+### 3.Cold vs Hot  
+#### 数据生产者 vs 数据消费者  
+#### &emsp;数据生产者是指 Observable(可观察对象)，产生数据的一方。   
+#### &emsp;数据消费者是指 Observers(观察者)，接收数据的一方。
